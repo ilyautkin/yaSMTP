@@ -1,4 +1,8 @@
-Changelog for sdStore.
+Changelog for yaSMTP.
+
+1.0.1-beta
+==============
+- Fixed @yandex.ru accounts
 
 1.0.0-beta
 ==============

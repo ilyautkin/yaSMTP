@@ -17,7 +17,11 @@ if ($object->xpdo) {
             	'mail_smtp_prefix' => 'ssl',
             	'mail_smtp_single_to' => '1',
             	'mail_use_smtp' => '1',
-            	'mail_smtp_user' => $options['email'],
+            	'mail_smtp_user' => str_replace(array(
+            	                                '@yandex.ru',
+            	                                '@yandex.com',
+            	                                '@ya.ru',
+            	                                '@ya.com'), '', $options['email']),
             	'emailsender' => $options['email'],
             	'mail_smtp_pass' => $options['password'],
             );
